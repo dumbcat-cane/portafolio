@@ -7,7 +7,9 @@ describe('Componente PersonalSection', () => {
   it('debe mostrar el nombre del perfil', () => {
     render(<SeccionPerfil />);
 
-    expect(screen.getByText('Cane')).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Canela Nuñez' })
+    ).toBeInTheDocument();
   });
 
   it('debe mostrar la descripción del perfil', () => {

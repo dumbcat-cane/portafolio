@@ -22,7 +22,8 @@ function CardContacto() {
       </Paragraph>
 
       <Space wrap size="middle" className="contacto-redes">
-        <Button className="button-github"
+        <Button
+          className="button-github"
           href="https://github.com/dumbcat-cane"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +32,8 @@ function CardContacto() {
           GitHub
         </Button>
 
-        <Button className="button-linkedin"
+        <Button
+          className="button-linkedin"
           href="https://cl.pinterest.com/pin/680888037459156527/"
           target="_blank"
           rel="noopener noreferrer"
@@ -45,16 +47,13 @@ function CardContacto() {
         form={form}
         layout="vertical"
         onFinish={onFinish}
-        onFinishFailed={() =>
-          message.error("Revisa los campos del formulario.")
-        }
       >
         <Form.Item
           label="Nombre"
           name="nombre"
           rules={[
             { required: true, message: "Ingresa tu nombre." },
-            { whitespace: true, message: "Ingresa un nombre válido." },
+            { whitespace: true, message: "Ingresa un nombre." },
           ]}
         >
           <Input maxLength={80} placeholder="Tu nombre" />
@@ -65,7 +64,7 @@ function CardContacto() {
           name="correo"
           rules={[
             { required: true, message: "Ingresa tu correo." },
-            { type: "email", message: "Ingresa un correo válido." },
+            { type: "email", message: "Ingresa un correo valido." },
           ]}
         >
           <Input maxLength={254} placeholder="ejemplo@gmail.com" />
@@ -76,7 +75,7 @@ function CardContacto() {
           name="mensaje"
           rules={[
             { required: true, message: "Escribe tu mensaje." },
-            { whitespace: true, message: "El mensaje no puede estar vacio." },
+            { whitespace: true, message: "El mensaje no puede estar vacío." },
             {
               min: 10,
               message: "El mensaje debe tener al menos 10 caracteres.",

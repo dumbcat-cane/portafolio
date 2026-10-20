@@ -22,16 +22,16 @@ describe('Componente SeccionProyecto', () => {
     render(<SeccionProyecto />);
 
     expect(
-      screen.getByText('Sistema de gestión para una óptica.')
+      screen.getByText('pagina web enfocada en la venta de lentes.')
     ).toBeInTheDocument();
 
     expect(
       screen.getByText(
-        'Aplicación web de gastronomía con catálogo de productos y talleres.'
+        'pagina web de gastronomia con catalogo de productos y talleres.'
       )
     ).toBeInTheDocument();
   });
-
+  
   it('debe mostrar los botones para ver los repositorios', () => {
     render(<SeccionProyecto />);
 
