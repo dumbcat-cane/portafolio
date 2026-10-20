@@ -4,7 +4,7 @@ function PersonalSection() {
   return (
     <section id="personal" className="portfolio-section hero">
       <CardPerfil
-        nombre="Cane"
+        nombre="Canela Nuñez"
         descripcion="Me interesa el desarrollo de aplicaciones web, aprender nuevas
             tecnologías y crear soluciones digitales."
         foto="/perfil.jpg"

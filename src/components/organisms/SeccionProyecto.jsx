@@ -10,7 +10,7 @@ const proyectos = [
     imagen: "/images/proyecto1.png",
     repositorio:
       "https://github.com/dumbcat-cane/EvaluacionFullStack",
-    descripcion: "Sistema de gestión para una óptica.",
+    descripcion: "pagina web enfocada en la venta de lentes.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const proyectos = [
     repositorio:
       "https://github.com/dumbcat-cane/optibean_nunez_zepeda_becerra_011D",
     descripcion:
-      "Aplicación web de gastronomía con catálogo de productos y talleres.",
+      "pagina web de gastronomia con catalogo de productos y talleres.",
   },
 ];
 
