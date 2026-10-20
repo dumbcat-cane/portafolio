@@ -17,12 +17,12 @@ function CardContacto() {
   return (
     <Card className="card-contacto" bordered={false}>
       <Paragraph>
-        ¡Contáctame! Puedes encontrarme en mis redes sociales
+        ¡Contactame! Puedes encontrarme en mis redes sociales
         o dejarme un mensaje mediante el formulario.
       </Paragraph>
 
       <Space wrap size="middle" className="contacto-redes">
-        <Button
+        <Button className="button-github"
           href="https://github.com/dumbcat-cane"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +31,7 @@ function CardContacto() {
           GitHub
         </Button>
 
-        <Button
+        <Button className="button-linkedin"
           href="https://cl.pinterest.com/pin/680888037459156527/"
           target="_blank"
           rel="noopener noreferrer"
@@ -68,7 +68,7 @@ function CardContacto() {
             { type: "email", message: "Ingresa un correo válido." },
           ]}
         >
-          <Input maxLength={254} placeholder="correo@ejemplo.com" />
+          <Input maxLength={254} placeholder="ejemplo@gmail.com" />
         </Form.Item>
 
         <Form.Item
@@ -76,7 +76,7 @@ function CardContacto() {
           name="mensaje"
           rules={[
             { required: true, message: "Escribe tu mensaje." },
-            { whitespace: true, message: "El mensaje no puede estar vacío." },
+            { whitespace: true, message: "El mensaje no puede estar vacio." },
             {
               min: 10,
               message: "El mensaje debe tener al menos 10 caracteres.",

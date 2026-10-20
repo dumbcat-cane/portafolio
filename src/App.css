@@ -188,7 +188,9 @@ body {
 }
 /* perfl seccion boton*/
 .scroll-button,
-.app-button {
+.app-button,
+.button-github,
+.button-linkedin {
   background-color: #512fa1 ;
   color: white;
   font-weight: bold;
@@ -199,14 +201,18 @@ body {
   box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3); 
 }
 .scroll-button:hover,
-.app-button:hover {
+.app-button:hover,
+.button-github:hover,
+.button-linkedin:hover {
   background-color: #381b75 !important; 
   color: white !important;        
   border: none !important;  
   transform: translateY(-3px);
 }
 .perfil-boton,
-.proyect-boton {
+.proyect-boton,
+.button-github,
+.button-linkedin {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -235,7 +241,8 @@ body {
 
 .experiencia-titulo,
 .estudios-titulo,
-.proyecto-titulo {
+.proyecto-titulo,
+.contacto-titulo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,13 +253,15 @@ body {
 
 .experiencia-titulo .anticon,
 .estudios-titulo .anticon,
-.proyecto-titulo .anticon {
+.proyecto-titulo .anticon,
+.contacto-titulo .anticon {
   font-size: 1.8rem;
 }
 
 .experiencia-titulo h2,
 .estudios-titulo h2,
-.proyecto-titulo h2 {
+.proyecto-titulo h2
+.contacto-titulo h2 {
   margin: 0 0 1rem;
   color: #e9e4ff;
   font-size: 2rem;
@@ -266,12 +275,45 @@ body {
 }
 
 .card-experiencia,
-.card-estudios {
+.card-estudios,
+.card-contacto {
   background: #161433;
   border: 1px solid #393052;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card-contacto .ant-typography,
+.card-contacto .ant-form-item-label > label {
+  color: #e9ddff;
+}
+.contacto-redes {
+  margin-bottom: 30px;
+}
+
+.card-contacto .ant-input,
+.card-contacto textarea.ant-input {
+  background-color: #100b20 !important;
+  color: #f3e8ff !important;
+  border: 1px solid #51416f !important;
+  border-radius: 8px;
+}
+
+.card-contacto .ant-input::placeholder,
+.card-contacto textarea.ant-input::placeholder {
+  color: #a89bbd !important;
+}
+
+.card-contacto .ant-input:focus,
+.card-contacto textarea.ant-input:focus {
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.2) !important;
+}
+
+
+.card-contacto .ant-form-item-label > label {
+  color: #e9ddff !important;
 }
 
 .experiencia-contenido,
@@ -306,6 +348,7 @@ body {
   color: #f2efff;
   font-size: 1.25rem;
 }
+
 
 .experiencia-empresa,
 .experiencia-fechas,

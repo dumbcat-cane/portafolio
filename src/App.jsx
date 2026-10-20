@@ -52,8 +52,13 @@ const App = () => {
       </Content>
 
       <Footer className="portfolio-footer">
-        <p>GitHub · Contacto</p>
-
+        <p>
+          © {new Date().getFullYear()} Mi Portafolio Personal.
+          Todos los derechos reservados.
+        </p>
+        <div>
+          Contacto: <a href="#contacto">Mis contactos</a>
+        </div>
       </Footer>
     </Layout>
   );

@@ -1,5 +1,6 @@
 import { Space } from "antd";
 import ContactCard from "../molecules/CardContacto";
+import {StarOutlined  } from "@ant-design/icons";
 
 function SeccionContacto() {
   return (
@@ -9,6 +10,7 @@ function SeccionContacto() {
       style={{ width: "100%" }}
     >
       <div className="contacto-titulo">
+        <StarOutlined />
         <h2>Contacto</h2>
       </div>
 
